@@ -5,7 +5,15 @@ Assignment #4
 _Task_#1_ (25pts) Write a subroutine to count the number of collisions for a hash table 
 that has been filled. You are given a declaration of a function here: 
 
+    def collisions(self) -> int:
+        '''
+        Task 1
+        You are to update this collisions function to actually compute the 
+        number of collisions in the hash table. 
+        '''
 
+        num = 0
+        return num
 
 Clearly, nothing is done yet. You are to loop through the array, then 
 traverse the linked list, and count the number of collisions. 
@@ -13,6 +21,17 @@ traverse the linked list, and count the number of collisions.
 _Task_#2_ (25pts) Write an updated hash function. You are given a second hash function, called
 ``hash_function2()''. You are to change the code so that it is different from 
 the hash_function1(). Initially, they are the same. 
+
+def hash_function2(table: "HashTable", key: str) -> int:
+    '''
+    Task 2
+    You are to create an updated hash function that does a better job of 
+    removing collisions. Full points for getting the number of collisions
+    down to 3, and partial points for 4. Currently it's the same as 
+    hash_function1 and needs to be update.d
+    '''
+    return ord(key[0]) % table.size
+
 
 Your code should confirm that the number of collisions, counted by the function you
 wrote for part #1, should reduce.
