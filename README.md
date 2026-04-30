@@ -22,16 +22,15 @@ _Task_#2_ (25pts) Write an updated hash function. You are given a second hash fu
 ``hash_function2()''. You are to change the code so that it is different from 
 the hash_function1(). Initially, they are the same. 
 
-def hash_function2(table: "HashTable", key: str) -> int:
-    '''
-    Task 2
-    You are to create an updated hash function that does a better job of 
-    removing collisions. Full points for getting the number of collisions
-    down to 3, and partial points for 4. Currently it's the same as 
-    hash_function1 and needs to be update.d
-    '''
-    return ord(key[0]) % table.size
-
+    def hash_function2(table: "HashTable", key: str) -> int:
+        '''
+        Task 2
+        You are to create an updated hash function that does a better job of 
+        removing collisions. Full points for getting the number of collisions
+        down to 3, and partial points for 4. Currently it's the same as 
+        hash_function1 and needs to be update.d
+        '''
+        return ord(key[0]) % table.size
 
 Your code should confirm that the number of collisions, counted by the function you
 wrote for part #1, should reduce.
