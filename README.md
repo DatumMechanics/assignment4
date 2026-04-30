@@ -1,6 +1,10 @@
 Assignment #4 
 
+This assignment is based on hash tables. 
 
+You are only to submit your updated hash_table.py file.
+
+There are three tasks:
 
 _Task_#1_ (25pts) Write a subroutine to count the number of collisions for a hash table 
 that has been filled. You are given a declaration of a function here: 
